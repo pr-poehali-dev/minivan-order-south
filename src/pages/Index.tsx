@@ -81,6 +81,9 @@ const Index = () => {
             <a href="#services" className="hover:text-primary transition-colors">
               Услуги
             </a>
+            <a href="#fleet" className="hover:text-primary transition-colors">
+              Автопарк
+            </a>
             <a href="#advantages" className="hover:text-primary transition-colors">
               Преимущества
             </a>
@@ -227,6 +230,141 @@ const Index = () => {
                 )}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fleet" className="py-20 px-4 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-bold">Наш автопарк</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Современные минивэны в отличном состоянии для вашего комфорта
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/files/c949d854-23bd-4151-8cb6-221d1c816021.jpg"
+                  alt="Nissan Serena"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Доступен
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Nissan Serena</h3>
+                  <p className="text-muted-foreground">Комфортабельный минивэн для любых задач</p>
+                </div>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Users" size={18} className="text-primary" />
+                    <span>До 8 мест</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Luggage" size={18} className="text-primary" />
+                    <span>Багажник</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Wind" size={18} className="text-primary" />
+                    <span>Кондиционер</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Wifi" size={18} className="text-primary" />
+                    <span>Wi-Fi</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-gradient-to-r from-primary to-secondary">
+                  <Icon name="Calendar" size={18} className="mr-2" />
+                  Забронировать
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/84192c46-5968-4bb3-ae35-f1f62f18463d.jpg"
+                  alt="Mercedes-Benz V-Class"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  VIP класс
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Mercedes-Benz V-Class</h3>
+                  <p className="text-muted-foreground">Премиум-класс для бизнеса</p>
+                </div>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Users" size={18} className="text-secondary" />
+                    <span>До 7 мест</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Luggage" size={18} className="text-secondary" />
+                    <span>Багажник</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Monitor" size={18} className="text-secondary" />
+                    <span>Мультимедиа</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Coffee" size={18} className="text-secondary" />
+                    <span>Кофе-бар</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-gradient-to-r from-secondary to-purple-600">
+                  <Icon name="Calendar" size={18} className="mr-2" />
+                  Забронировать
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/13e543c4-5b0c-4aed-a2f0-942565017740.jpg"
+                  alt="Volkswagen Multivan"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Популярный
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Volkswagen Multivan</h3>
+                  <p className="text-muted-foreground">Надежность и комфорт</p>
+                </div>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Users" size={18} className="text-accent" />
+                    <span>До 7 мест</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Luggage" size={18} className="text-accent" />
+                    <span>Багажник</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Wind" size={18} className="text-accent" />
+                    <span>Климат</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Zap" size={18} className="text-accent" />
+                    <span>USB-порты</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-gradient-to-r from-accent to-orange-600">
+                  <Icon name="Calendar" size={18} className="mr-2" />
+                  Забронировать
+                </Button>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
