@@ -77,7 +77,7 @@ const Index = () => {
               МиниВэн ЮГ
             </span>
           </div>
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-6 items-center">
             <a href="#services" className="hover:text-primary transition-colors">
               Услуги
             </a>
@@ -90,11 +90,28 @@ const Index = () => {
             <a href="#contact" className="hover:text-primary transition-colors">
               Контакты
             </a>
+            <a href="tel:+79284188896" className="font-semibold text-lg hover:text-primary transition-colors">
+              +7 928 418-88-96
+            </a>
           </nav>
-          <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-            <Icon name="Phone" size={18} className="mr-2" />
-            Заказать звонок
-          </Button>
+          <div className="flex gap-2">
+            <a href="https://wa.me/79284188896" target="_blank" rel="noopener noreferrer">
+              <Button size="icon" variant="outline" className="hover:bg-green-50">
+                <Icon name="MessageCircle" size={20} className="text-green-600" />
+              </Button>
+            </a>
+            <a href="https://t.me/+79284188896" target="_blank" rel="noopener noreferrer">
+              <Button size="icon" variant="outline" className="hover:bg-blue-50">
+                <Icon name="Send" size={20} className="text-blue-600" />
+              </Button>
+            </a>
+            <a href="tel:+79284188896">
+              <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+                <Icon name="Phone" size={18} className="mr-2" />
+                Позвонить
+              </Button>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -112,14 +129,30 @@ const Index = () => {
                 Комфортные перевозки для бизнеса и отдыха. Профессиональные водители, новые автомобили, гибкие маршруты.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Получить расчет
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8">
-                  <Icon name="Info" size={20} className="mr-2" />
-                  Узнать больше
-                </Button>
+                <a href="tel:+79284188896">
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8">
+                    <Icon name="Phone" size={20} className="mr-2" />
+                    Позвонить сейчас
+                  </Button>
+                </a>
+                <a href="https://wa.me/79284188896" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="text-lg px-8 hover:bg-green-50">
+                    <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+                    WhatsApp
+                  </Button>
+                </a>
+                <a href="https://t.me/+79284188896" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="text-lg px-8 hover:bg-blue-50">
+                    <Icon name="Send" size={20} className="mr-2 text-blue-600" />
+                    Telegram
+                  </Button>
+                </a>
+              </div>
+              <div className="flex items-center gap-3 pt-2">
+                <Icon name="Phone" size={24} className="text-primary" />
+                <a href="tel:+79284188896" className="text-2xl font-bold hover:text-primary transition-colors">
+                  +7 928 418-88-96
+                </a>
               </div>
               <div className="flex gap-8 pt-4">
                 <div>
@@ -358,6 +391,27 @@ const Index = () => {
                   <Icon name="Send" size={20} className="mr-2" />
                   Отправить заявку
                 </Button>
+                <div className="text-center pt-4">
+                  <p className="text-sm text-muted-foreground mb-3">Или свяжитесь с нами напрямую:</p>
+                  <div className="flex justify-center gap-3">
+                    <a href="tel:+79284188896">
+                      <Button size="lg" variant="outline">
+                        <Icon name="Phone" size={20} className="mr-2" />
+                        +7 928 418-88-96
+                      </Button>
+                    </a>
+                    <a href="https://wa.me/79284188896" target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" variant="outline" className="hover:bg-green-50">
+                        <Icon name="MessageCircle" size={20} className="text-green-600" />
+                      </Button>
+                    </a>
+                    <a href="https://t.me/+79284188896" target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" variant="outline" className="hover:bg-blue-50">
+                        <Icon name="Send" size={20} className="text-blue-600" />
+                      </Button>
+                    </a>
+                  </div>
+                </div>
               </form>
             </Card>
           </div>
@@ -378,15 +432,11 @@ const Index = () => {
             </div>
             <div>
               <h4 className="font-bold text-lg mb-4">Контакты</h4>
-              <div className="space-y-2 text-gray-400">
-                <div className="flex items-center gap-2">
+              <div className="space-y-3 text-gray-400">
+                <a href="tel:+79284188896" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Icon name="Phone" size={18} />
-                  <span>+7 (800) 555-35-35</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Icon name="Mail" size={18} />
-                  <span>info@minivan-yug.ru</span>
-                </div>
+                  <span>+7 928 418-88-96</span>
+                </a>
                 <div className="flex items-center gap-2">
                   <Icon name="MapPin" size={18} />
                   <span>Краснодар, Ростов, Сочи</span>
@@ -394,17 +444,23 @@ const Index = () => {
               </div>
             </div>
             <div>
-              <h4 className="font-bold text-lg mb-4">Социальные сети</h4>
+              <h4 className="font-bold text-lg mb-4">Мессенджеры</h4>
               <div className="flex gap-4">
-                <Button variant="ghost" size="icon" className="hover:text-primary">
-                  <Icon name="MessageCircle" size={24} />
-                </Button>
-                <Button variant="ghost" size="icon" className="hover:text-primary">
-                  <Icon name="Phone" size={24} />
-                </Button>
-                <Button variant="ghost" size="icon" className="hover:text-primary">
-                  <Icon name="Mail" size={24} />
-                </Button>
+                <a href="https://wa.me/79284188896" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="icon" className="hover:text-green-500">
+                    <Icon name="MessageCircle" size={24} />
+                  </Button>
+                </a>
+                <a href="https://t.me/+79284188896" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="icon" className="hover:text-blue-500">
+                    <Icon name="Send" size={24} />
+                  </Button>
+                </a>
+                <a href="tel:+79284188896">
+                  <Button variant="ghost" size="icon" className="hover:text-primary">
+                    <Icon name="Phone" size={24} />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
