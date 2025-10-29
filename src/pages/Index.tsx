@@ -12,6 +12,17 @@ const Index = () => {
     message: '',
   });
 
+  const [calculatorData, setCalculatorData] = useState({
+    distance: '',
+    passengers: '6',
+  });
+
+  const calculatePrice = () => {
+    const distance = parseFloat(calculatorData.distance);
+    if (isNaN(distance) || distance <= 0) return 0;
+    return distance * 45;
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
@@ -84,8 +95,8 @@ const Index = () => {
             <a href="#fleet" className="hover:text-primary transition-colors">
               Автопарк
             </a>
-            <a href="#advantages" className="hover:text-primary transition-colors">
-              Преимущества
+            <a href="#calculator" className="hover:text-primary transition-colors">
+              Калькулятор
             </a>
             <a href="#contact" className="hover:text-primary transition-colors">
               Контакты
@@ -224,6 +235,83 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm">{advantage.description}</p>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="calculator" className="py-20 px-4 bg-white">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12 space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold">Калькулятор стоимости</h2>
+              <p className="text-xl text-muted-foreground">
+                Рассчитайте примерную стоимость вашей поездки
+              </p>
+            </div>
+            <Card className="p-8 md:p-12 bg-gradient-to-br from-blue-50 to-purple-50">
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-lg font-semibold mb-3">Расстояние поездки (км)</label>
+                  <Input
+                    type="number"
+                    placeholder="Введите километраж"
+                    value={calculatorData.distance}
+                    onChange={(e) => setCalculatorData({ ...calculatorData, distance: e.target.value })}
+                    className="text-xl py-6"
+                    min="0"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2">Тариф: 45 ₽ за километр</p>
+                </div>
+
+                <div>
+                  <label className="block text-lg font-semibold mb-3">Количество пассажиров</label>
+                  <div className="grid grid-cols-3 gap-3">
+                    {['6', '7', '8'].map((num) => (
+                      <Button
+                        key={num}
+                        type="button"
+                        variant={calculatorData.passengers === num ? 'default' : 'outline'}
+                        className={`py-6 text-lg ${
+                          calculatorData.passengers === num
+                            ? 'bg-gradient-to-r from-primary to-secondary'
+                            : ''
+                        }`}
+                        onClick={() => setCalculatorData({ ...calculatorData, passengers: num })}
+                      >
+                        <Icon name="Users" size={20} className="mr-2" />
+                        {num}
+                      </Button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="border-t-2 border-dashed pt-6 mt-6">
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-2xl font-bold">Стоимость поездки:</span>
+                    <span className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                      {calculatePrice().toLocaleString('ru-RU')} ₽
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-6">
+                    * Итоговая цена может измениться в зависимости от маршрута и дополнительных услуг
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    <a href="tel:+79284188896">
+                      <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
+                        <Icon name="Phone" size={20} className="mr-2" />
+                        Позвонить
+                      </Button>
+                    </a>
+                    <a href="https://wa.me/79284188896" target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" variant="outline" className="w-full hover:bg-green-50">
+                        <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+                        WhatsApp
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
