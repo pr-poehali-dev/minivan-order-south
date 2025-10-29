@@ -229,7 +229,7 @@ const Index = () => {
               Современные минивэны в отличном состоянии для вашего комфорта
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
               <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
                 <Icon name="Car" size={64} className="text-white" />
@@ -240,12 +240,12 @@ const Index = () => {
               <div className="p-6 space-y-4">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Nissan Serena C27</h3>
-                  <p className="text-muted-foreground">Черный комфортабельный минивэн для любых задач</p>
+                  <p className="text-muted-foreground">Белый комфортабельный минивэн для любых задач</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="flex items-center gap-2">
                     <Icon name="Users" size={18} className="text-primary" />
-                    <span>До 8 мест</span>
+                    <span>6 мест</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Luggage" size={18} className="text-primary" />
@@ -268,73 +268,36 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
                 <Icon name="Car" size={64} className="text-white" />
-                <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  VIP класс
+                <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Доступен
                 </div>
               </div>
               <div className="p-6 space-y-4">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Mercedes-Benz V-Class</h3>
-                  <p className="text-muted-foreground">Премиум-класс для бизнеса</p>
+                  <h3 className="text-2xl font-bold mb-2">Nissan Serena C27</h3>
+                  <p className="text-muted-foreground">Белый комфортабельный минивэн для любых задач</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="flex items-center gap-2">
-                    <Icon name="Users" size={18} className="text-secondary" />
-                    <span>До 7 мест</span>
+                    <Icon name="Users" size={18} className="text-primary" />
+                    <span>6 мест</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Icon name="Luggage" size={18} className="text-secondary" />
+                    <Icon name="Luggage" size={18} className="text-primary" />
                     <span>Багажник</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Icon name="Monitor" size={18} className="text-secondary" />
-                    <span>Мультимедиа</span>
+                    <Icon name="Wind" size={18} className="text-primary" />
+                    <span>Кондиционер</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Icon name="Coffee" size={18} className="text-secondary" />
-                    <span>Кофе-бар</span>
+                    <Icon name="Wifi" size={18} className="text-primary" />
+                    <span>Wi-Fi</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-secondary to-purple-600">
-                  <Icon name="Calendar" size={18} className="mr-2" />
-                  Забронировать
-                </Button>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
-                <Icon name="Car" size={64} className="text-white" />
-                <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  Популярный
-                </div>
-              </div>
-              <div className="p-6 space-y-4">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">Volkswagen Multivan</h3>
-                  <p className="text-muted-foreground">Надежность и комфорт</p>
-                </div>
-                <div className="grid grid-cols-2 gap-3 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Users" size={18} className="text-accent" />
-                    <span>До 7 мест</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Luggage" size={18} className="text-accent" />
-                    <span>Багажник</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Wind" size={18} className="text-accent" />
-                    <span>Климат</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Zap" size={18} className="text-accent" />
-                    <span>USB-порты</span>
-                  </div>
-                </div>
-                <Button className="w-full bg-gradient-to-r from-accent to-orange-600">
+                <Button className="w-full bg-gradient-to-r from-primary to-secondary">
                   <Icon name="Calendar" size={18} className="mr-2" />
                   Забронировать
                 </Button>
