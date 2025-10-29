@@ -229,7 +229,7 @@ const Index = () => {
               Современные минивэны в отличном состоянии для вашего комфорта
             </p>
           </div>
-          <div className="max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
               <div className="relative overflow-hidden">
                 <img
@@ -265,6 +265,47 @@ const Index = () => {
                   </div>
                 </div>
                 <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg">
+                  <Icon name="Calendar" size={20} className="mr-2" />
+                  Забронировать
+                </Button>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/83da0594-1f96-4c8e-b2e1-18dcfb45e9a1.jpg"
+                  alt="Nissan Serena C27 белый с багажником"
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Доступен
+                </div>
+              </div>
+              <div className="p-8 space-y-6">
+                <div>
+                  <h3 className="text-3xl font-bold mb-3">Nissan Serena C27</h3>
+                  <p className="text-lg text-muted-foreground">Белый минивэн с багажником на крыше для дальних поездок</p>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <Icon name="Users" size={24} className="text-secondary" />
+                    <span className="text-lg font-medium">6 мест</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Package" size={24} className="text-secondary" />
+                    <span className="text-lg font-medium">Багажник на крыше</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Wind" size={24} className="text-secondary" />
+                    <span className="text-lg font-medium">Кондиционер</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Wifi" size={24} className="text-secondary" />
+                    <span className="text-lg font-medium">Wi-Fi</span>
+                  </div>
+                </div>
+                <Button size="lg" className="w-full bg-gradient-to-r from-secondary to-purple-600 text-lg">
                   <Icon name="Calendar" size={20} className="mr-2" />
                   Забронировать
                 </Button>
