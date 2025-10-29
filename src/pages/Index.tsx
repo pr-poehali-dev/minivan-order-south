@@ -207,8 +207,8 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
               <img
-                src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/4b36c0fb-098d-402c-acba-d7310baeff52.jpg"
-                alt="Путешествие"
+                src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/b130b80a-56ef-47db-bcd1-91314001e11f.jpg"
+                alt="Салон минивэна с пассажирами"
                 className="rounded-3xl shadow-2xl w-full"
               />
             </div>
@@ -256,8 +256,8 @@ const Index = () => {
               </div>
               <div className="p-6 space-y-4">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Nissan Serena</h3>
-                  <p className="text-muted-foreground">Комфортабельный минивэн для любых задач</p>
+                  <h3 className="text-2xl font-bold mb-2">Nissan Serena C27</h3>
+                  <p className="text-muted-foreground">Черный комфортабельный минивэн для любых задач</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="flex items-center gap-2">
