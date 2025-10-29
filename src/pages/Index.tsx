@@ -229,76 +229,43 @@ const Index = () => {
               Современные минивэны в отличном состоянии для вашего комфорта
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                <Icon name="Car" size={64} className="text-white" />
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/126a0360-8df5-4625-b50b-a85f0a50fe87.jpg"
+                  alt="Nissan Serena C27 черный"
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
                 <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Доступен
                 </div>
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-8 space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Nissan Serena C27</h3>
-                  <p className="text-muted-foreground">Белый комфортабельный минивэн для любых задач</p>
+                  <h3 className="text-3xl font-bold mb-3">Nissan Serena C27</h3>
+                  <p className="text-lg text-muted-foreground">Черный комфортабельный минивэн для любых задач</p>
                 </div>
-                <div className="grid grid-cols-2 gap-3 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Users" size={18} className="text-primary" />
-                    <span>6 мест</span>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <Icon name="Users" size={24} className="text-primary" />
+                    <span className="text-lg font-medium">7 мест</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Luggage" size={18} className="text-primary" />
-                    <span>Багажник</span>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Wind" size={24} className="text-primary" />
+                    <span className="text-lg font-medium">Кондиционер</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Wind" size={18} className="text-primary" />
-                    <span>Кондиционер</span>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Wifi" size={24} className="text-primary" />
+                    <span className="text-lg font-medium">Wi-Fi</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Wifi" size={18} className="text-primary" />
-                    <span>Wi-Fi</span>
-                  </div>
-                </div>
-                <Button className="w-full bg-gradient-to-r from-primary to-secondary">
-                  <Icon name="Calendar" size={18} className="mr-2" />
-                  Забронировать
-                </Button>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                <Icon name="Car" size={64} className="text-white" />
-                <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  Доступен
-                </div>
-              </div>
-              <div className="p-6 space-y-4">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">Nissan Serena C27</h3>
-                  <p className="text-muted-foreground">Белый комфортабельный минивэн для любых задач</p>
-                </div>
-                <div className="grid grid-cols-2 gap-3 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Users" size={18} className="text-primary" />
-                    <span>6 мест</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Luggage" size={18} className="text-primary" />
-                    <span>Багажник</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Wind" size={18} className="text-primary" />
-                    <span>Кондиционер</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Wifi" size={18} className="text-primary" />
-                    <span>Wi-Fi</span>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Zap" size={24} className="text-primary" />
+                    <span className="text-lg font-medium">USB-порты</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-primary to-secondary">
-                  <Icon name="Calendar" size={18} className="mr-2" />
+                <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg">
+                  <Icon name="Calendar" size={20} className="mr-2" />
                   Забронировать
                 </Button>
               </div>
