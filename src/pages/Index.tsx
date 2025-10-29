@@ -136,14 +136,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="relative animate-scale-in">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
-              <img
-                src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/13e543c4-5b0c-4aed-a2f0-942565017740.jpg"
-                alt="Минивэн"
-                className="relative rounded-3xl shadow-2xl w-full"
-              />
-            </div>
+
           </div>
         </div>
       </section>
@@ -205,13 +198,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
-              <img
-                src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/b130b80a-56ef-47db-bcd1-91314001e11f.jpg"
-                alt="Салон минивэна с пассажирами"
-                className="rounded-3xl shadow-2xl w-full"
-              />
-            </div>
+
             <div className="space-y-6 order-1 lg:order-2">
               <h2 className="text-4xl md:text-5xl font-bold">
                 Путешествуйте с комфортом
@@ -244,12 +231,8 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/files/c949d854-23bd-4151-8cb6-221d1c816021.jpg"
-                  alt="Nissan Serena"
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                <Icon name="Car" size={64} className="text-white" />
                 <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Доступен
                 </div>
@@ -285,12 +268,8 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/84192c46-5968-4bb3-ae35-f1f62f18463d.jpg"
-                  alt="Mercedes-Benz V-Class"
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                <Icon name="Car" size={64} className="text-white" />
                 <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
                   VIP класс
                 </div>
@@ -326,12 +305,8 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/8fd2668d-2a00-48ad-9cea-dea7a59cca54/files/13e543c4-5b0c-4aed-a2f0-942565017740.jpg"
-                  alt="Volkswagen Multivan"
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
+                <Icon name="Car" size={64} className="text-white" />
                 <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Популярный
                 </div>
